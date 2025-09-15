@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-2">
             <ShoppingBag className="h-8 w-8 text-bakery-brown" />
-            <h1 className="text-2xl font-serif font-bold text-bakery-brown">Sweet Dreams Bakery</h1>
+            <h1 className="text-2xl font-serif font-bold text-bakery-brown">Blackbird Gluten Free Bakery</h1>
           </Link>
 
           {/* Desktop Navigation */}

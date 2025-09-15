@@ -17,30 +17,30 @@ export default function Order() {
 
   const menuCategories = [
     {
-      name: "Fresh Bread",
+      name: "Gluten-Free Breads",
       items: [
-        { name: "Artisan Sourdough", price: "$6.50", description: "Our signature 40-year-old starter" },
-        { name: "Whole Wheat Loaf", price: "$5.50", description: "Hearty and nutritious" },
-        { name: "French Baguette", price: "$4.00", description: "Crispy crust, soft interior" },
-        { name: "Cinnamon Raisin", price: "$6.00", description: "Sweet and aromatic" }
+        { name: "Artisan White Bread", price: "$7.50", description: "Soft, fluffy, tastes like traditional bread" },
+        { name: "Multigrain Loaf", price: "$8.00", description: "Hearty and nutritious with seeds" },
+        { name: "Sandwich Rolls", price: "$6.00", description: "Perfect for lunch, pack of 4" },
+        { name: "Dinner Rolls", price: "$8.00", description: "Soft and warm, pack of 6" }
       ]
     },
     {
-      name: "Pastries & Croissants",
+      name: "Sweet Treats & Pastries",
       items: [
-        { name: "Butter Croissant", price: "$3.50", description: "Flaky and buttery perfection" },
-        { name: "Almond Croissant", price: "$4.50", description: "Filled with almond cream" },
-        { name: "Danish Pastries", price: "$4.00", description: "Variety of fruit and cream fillings" },
-        { name: "Cinnamon Rolls", price: "$4.25", description: "Warm, gooey, and irresistible" }
+        { name: "Muffins", price: "$4.50", description: "Blueberry, chocolate chip, or banana" },
+        { name: "Cookies", price: "$3.00", description: "Chocolate chip, oatmeal, or sugar cookies" },
+        { name: "Scones", price: "$4.00", description: "Cranberry orange or plain" },
+        { name: "Brownies", price: "$4.50", description: "Rich, fudgy, and completely gluten-free" }
       ]
     },
     {
-      name: "Cakes & Custom Orders",
+      name: "Cakes & Special Orders",
       items: [
-        { name: "Birthday Cake (8\")", price: "$35.00", description: "Custom decorations available" },
-        { name: "Wedding Cake", price: "From $150", description: "Multi-tier, custom design" },
-        { name: "Cupcakes (dozen)", price: "$28.00", description: "Various flavors and decorations" },
-        { name: "Cheesecake Slice", price: "$6.50", description: "New York style, seasonal flavors" }
+        { name: "Birthday Cake (8\")", price: "$45.00", description: "Custom decorations, any dietary needs" },
+        { name: "Wedding Cake", price: "From $200", description: "Multi-tier, gluten-free perfection" },
+        { name: "Cupcakes (dozen)", price: "$36.00", description: "Various flavors, beautiful decorations" },
+        { name: "Specialty Dietary Items", price: "Varies", description: "Sugar-free, nut-free, dairy-free options" }
       ]
     }
   ];
@@ -85,9 +85,9 @@ export default function Order() {
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-r from-bakery-gold to-bakery-rose">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-serif font-bold text-white mb-6">Place Your Order</h1>
+          <h1 className="text-5xl font-serif font-bold text-white mb-6">Order Gluten-Free Goodness</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Order online for pickup or delivery, or give us a call. We're here to make your day sweeter!
+            Place your order for pickup in Hampstead, NH, or give us a call. We're here to accommodate all your dietary needs!
           </p>
         </div>
       </section>
@@ -159,7 +159,6 @@ export default function Order() {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bakery-brown focus:border-transparent"
                     >
                       <option value="pickup">Pickup</option>
-                      <option value="delivery">Delivery (local area)</option>
                     </select>
                   </div>
                 </div>
@@ -194,7 +193,7 @@ export default function Order() {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Items to Order *
+                    Items & Dietary Requirements *
                   </label>
                   <textarea
                     name="items"
@@ -202,21 +201,21 @@ export default function Order() {
                     onChange={handleInputChange}
                     required
                     rows={4}
-                    placeholder="Please list the items you'd like to order (e.g., 2 Butter Croissants, 1 Sourdough Loaf, 6 Cupcakes)"
+                    placeholder="Please list items and any dietary needs (e.g., 1 White Bread Loaf, 6 Sugar-free Cupcakes, 1 Nut-free Birthday Cake)"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bakery-brown focus:border-transparent"
                   ></textarea>
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Special Requests or Allergies
+                    Additional Dietary Restrictions or Special Requests
                   </label>
                   <textarea
                     name="specialRequests"
                     value={formData.specialRequests}
                     onChange={handleInputChange}
                     rows={3}
-                    placeholder="Any special decorations, dietary requirements, or other requests"
+                    placeholder="Please specify any allergies, diabetic needs, or special decorations"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bakery-brown focus:border-transparent"
                   ></textarea>
                 </div>
@@ -235,7 +234,7 @@ export default function Order() {
           <div className="space-y-8">
             {/* Contact Info */}
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-serif font-bold text-bakery-brown mb-6">Contact & Hours</h2>
+              <h2 className="text-2xl font-serif font-bold text-bakery-brown mb-6">Visit Us in Hampstead</h2>
               
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -250,7 +249,7 @@ export default function Order() {
                   <Mail className="h-5 w-5 text-bakery-brown" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-gray-600">hello@sweetdreamsbakery.com</p>
+                    <p className="text-gray-600">info@blackbirdglutenfree.com</p>
                   </div>
                 </div>
                 
@@ -258,7 +257,7 @@ export default function Order() {
                   <MapPin className="h-5 w-5 text-bakery-brown" />
                   <div>
                     <p className="font-medium">Address</p>
-                    <p className="text-gray-600">123 Baker Street, Downtown, Your City 12345</p>
+                    <p className="text-gray-600">Hampstead, New Hampshire</p>
                   </div>
                 </div>
                 
@@ -267,9 +266,9 @@ export default function Order() {
                   <div>
                     <p className="font-medium mb-2">Hours</p>
                     <div className="text-gray-600 space-y-1">
-                      <p>Monday - Friday: 6:00 AM - 7:00 PM</p>
-                      <p>Saturday: 6:00 AM - 8:00 PM</p>
-                      <p>Sunday: 7:00 AM - 6:00 PM</p>
+                      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                      <p>Saturday: 8:00 AM - 5:00 PM</p>
+                      <p>Sunday: Closed</p>
                     </div>
                   </div>
                 </div>
@@ -278,7 +277,7 @@ export default function Order() {
 
             {/* Popular Menu Items */}
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-serif font-bold text-bakery-brown mb-6">Popular Items</h2>
+              <h2 className="text-2xl font-serif font-bold text-bakery-brown mb-6">Our Gluten-Free Menu</h2>
               
               {menuCategories.map((category, categoryIndex) => (
                 <div key={categoryIndex} className="mb-8 last:mb-0">
@@ -302,7 +301,7 @@ export default function Order() {
               
               <div className="mt-6 p-4 bg-bakery-cream rounded-lg">
                 <p className="text-sm text-gray-600">
-                  <strong>Note:</strong> Prices are subject to change. Custom orders and wedding cakes require advance notice. Please call for detailed pricing on custom items.
+                  <strong>Note:</strong> All items are made in our 100% gluten-free facility. Custom orders for special dietary needs welcome with advance notice. Please call to discuss specific requirements.
                 </p>
               </div>
             </div>

@@ -5,36 +5,36 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   const featuredItems = [
     {
-      name: "Artisan Croissants",
-      description: "Buttery, flaky pastries made with French technique",
-      image: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400"
+      name: "Gluten-Free Artisan Breads",
+      description: "Fresh daily breads that taste just like traditional wheat bread",
+      image: "/jpic1.jpg"
     },
     {
-      name: "Custom Wedding Cakes",
-      description: "Beautiful, delicious cakes for your special day",
-      image: "https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?auto=compress&cs=tinysrgb&w=400"
+      name: "Custom Celebration Cakes",
+      description: "Beautiful gluten-free cakes for weddings, birthdays, and special occasions",
+      image: "/jpic2.jpg"
     },
     {
-      name: "Fresh Daily Bread",
-      description: "Traditional sourdough and artisan loaves",
-      image: "https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg?auto=compress&cs=tinysrgb&w=400"
+      name: "Allergy-Friendly Treats",
+      description: "Delicious options for diabetic, nut-free, and dairy-free diets",
+      image: "/485084410_672328091916102_4062372249548441132_n.jpg"
     }
   ];
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      text: "The best bakery in town! Their croissants are absolutely divine.",
+      name: "Jennifer M.",
+      text: "Finally, a bakery where my celiac daughter can enjoy everything! The bread tastes amazing.",
       rating: 5
     },
     {
-      name: "Mike Chen",
-      text: "Made our wedding cake and it was perfect. Beautiful and delicious!",
+      name: "Robert K.",
+      text: "As a diabetic, I thought I'd never enjoy baked goods again. Blackbird changed that!",
       rating: 5
     },
     {
-      name: "Emma Davis",
-      text: "I come here every morning for fresh bread. The quality is unmatched.",
+      name: "Lisa T.",
+      text: "The staff understands allergies and cross-contamination. I feel safe eating here.",
       rating: 5
     }
   ];
@@ -46,13 +46,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
-              Fresh Baked 
-              <span className="text-bakery-gold"> Dreams</span> 
-              Daily
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+              Gluten-Free Baking
+              <span className="text-bakery-gold"> For Everyone</span>
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Family-owned bakery serving the community with love, tradition, and the finest ingredients since 1985.
+              Hampstead, NH's premier gluten-free bakery specializing in delicious treats for all dietary needs - diabetic, nut-free, dairy-free, and more.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
@@ -75,7 +74,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`
+            backgroundImage: `url('/494604053_706513735164204_5122122652231385829_n(1).jpg')`
           }}
         ></div>
       </section>
@@ -84,9 +83,9 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif font-bold text-bakery-brown mb-4">Our Specialties</h2>
+            <h2 className="text-4xl font-serif font-bold text-bakery-brown mb-4">Gluten-Free Specialties</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover our most beloved creations, made fresh daily with premium ingredients and time-honored recipes.
+              Discover our most beloved gluten-free creations, made fresh daily with premium ingredients and careful attention to dietary restrictions.
             </p>
           </div>
           
@@ -113,7 +112,7 @@ export default function Home() {
       <section className="py-16 bg-bakery-cream">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif font-bold text-bakery-brown mb-4">Why Choose Sweet Dreams?</h2>
+            <h2 className="text-4xl font-serif font-bold text-bakery-brown mb-4">Why Choose Blackbird?</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -121,24 +120,24 @@ export default function Home() {
               <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md group-hover:shadow-lg transition-shadow">
                 <Heart className="h-10 w-10 text-bakery-rose" />
               </div>
-              <h3 className="text-xl font-semibold text-bakery-brown mb-2">Made with Love</h3>
-              <p className="text-gray-600">Every item is crafted with passion and attention to detail.</p>
+              <h3 className="text-xl font-semibold text-bakery-brown mb-2">Safe & Inclusive</h3>
+              <p className="text-gray-600">Dedicated gluten-free facility with strict protocols to prevent cross-contamination.</p>
             </div>
             
             <div className="text-center group">
               <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md group-hover:shadow-lg transition-shadow">
                 <Award className="h-10 w-10 text-bakery-gold" />
               </div>
-              <h3 className="text-xl font-semibold text-bakery-brown mb-2">Award Winning</h3>
-              <p className="text-gray-600">Recognized for excellence in baking and customer service.</p>
+              <h3 className="text-xl font-semibold text-bakery-brown mb-2">All Dietary Needs</h3>
+              <p className="text-gray-600">Specializing in diabetic-friendly, nut-free, dairy-free, and other special dietary requirements.</p>
             </div>
             
             <div className="text-center group">
               <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md group-hover:shadow-lg transition-shadow">
                 <Star className="h-10 w-10 text-bakery-sage" />
               </div>
-              <h3 className="text-xl font-semibold text-bakery-brown mb-2">Premium Quality</h3>
-              <p className="text-gray-600">Only the finest ingredients make it into our recipes.</p>
+              <h3 className="text-xl font-semibold text-bakery-brown mb-2">Tastes Amazing</h3>
+              <p className="text-gray-600">You won't believe it's gluten-free! Our recipes deliver on taste and texture.</p>
             </div>
           </div>
         </div>
@@ -170,8 +169,8 @@ export default function Home() {
       {/* Call to Action */}
       <section className="py-16 bg-bakery-brown text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-serif font-bold mb-4">Ready to Taste the Magic?</h2>
-          <p className="text-xl mb-8 opacity-90">Visit us today or place your order online for pickup or delivery.</p>
+          <h2 className="text-4xl font-serif font-bold mb-4">Ready to Experience Gluten-Free Excellence?</h2>
+          <p className="text-xl mb-8 opacity-90">Visit us in Hampstead, NH or place your order for pickup.</p>
           <Link 
             to="/order" 
             className="bg-bakery-gold text-bakery-brown px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors inline-flex items-center group"

@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5" />
-                <p>123 Baker Street, Downtown, Your City 12345</p>
+                <p>Hampstead, NH</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5" />
@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5" />
-                <p>hello@sweetdreamsbakery.com</p>
+                <p>info@blackbirdglutenfree.com</p>
               </div>
             </div>
           </div>
@@ -31,15 +31,15 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex justify-between">
                 <span>Monday - Friday</span>
-                <span>6:00 AM - 7:00 PM</span>
+                <span>8:00 AM - 6:00 PM</span>
               </div>
               <div className="flex justify-between">
                 <span>Saturday</span>
-                <span>6:00 AM - 8:00 PM</span>
+                <span>8:00 AM - 5:00 PM</span>
               </div>
               <div className="flex justify-between">
                 <span>Sunday</span>
-                <span>7:00 AM - 6:00 PM</span>
+                <span>Closed</span>
               </div>
             </div>
           </div>
@@ -64,13 +64,13 @@ export default function Footer() {
               </a>
             </div>
             <p className="mt-4 text-sm opacity-90">
-              Stay updated with our latest creations and special offers!
+              Stay updated with our latest gluten-free creations and special offers!
             </p>
           </div>
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p>&copy; 2025 Sweet Dreams Bakery. Made with love, one batch at a time.</p>
+          <p>&copy; 2025 Blackbird Gluten Free Bakery. Baking inclusively for everyone.</p>
         </div>
       </div>
     </footer>
